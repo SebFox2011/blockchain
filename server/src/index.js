@@ -235,7 +235,7 @@ app.get("/isBlockchainValid", async (req, res) => {
     const { isValid, errorMessageBlockChain } = isBlockchainValid(blockchain);
     res.statusMessage = errorMessageBlockChain;
     if (isValid) {
-      res.status(200).json();
+      res.status(200).json({ isValid });
     } else {
       res.status(400).json({ isValid, error: errorMessageBlockChain });
     }
