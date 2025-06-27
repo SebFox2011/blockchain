@@ -3,3 +3,6 @@ server/node_modules/*
 server/dist/*
 server/.env
 server/package-lock.json
+front/node_modules/*
+front/dist/*
+front/package-lock.json
